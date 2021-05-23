@@ -1,0 +1,22 @@
+.center-text{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.center-text div p{
+  text-align: center;
+  margin: 0 130px;
+}
+
+.center-text div img{
+  width: 70px;
+  height: 70px;
+  margin-top: -20px;
+}
+
+.center-footer{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}

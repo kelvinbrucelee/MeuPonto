@@ -1,0 +1,192 @@
+
+<menu>
+<menuitem label="Ponto">
+    <icon>fa:clock-o blue fa-fw fa-fw</icon>
+    <menu>
+    <menuitem label='Presença'>
+        <icon>fa:clock-o blue fa-fw fa-fw</icon>
+        <action>PontoList</action> 
+    </menuitem>
+      <menuitem label="Justificar">
+        <icon>fa:pencil-square-o blue fa-fw fa-fw</icon>
+        <action>JustificativaList</action>
+      </menuitem>
+      <menuitem label="Ajustar Ponto">
+        <icon>fa:th-large blue fa-fw fa-fw</icon>
+        <action>AjustarPontoAdminList</action>
+      </menuitem>
+      <menuitem label="Ajustar Justificativa">
+        <icon>fa:dot-circle-o blue fa-fw fa-fw</icon>
+        <action>AjustarJustificativaAdminList</action>
+      </menuitem>
+    </menu>
+  </menuitem>
+ <menuitem label="Especial">
+    <icon>fa:braille blue fa-fw fa-fw</icon>
+    <menu>
+    <menuitem label='Ajustar Especial'>
+        <icon>fa:assistive-listening-systems blue fa-fw fa-fw</icon>
+        <action>AjustarPresencaEspecialAdminList</action>
+    </menuitem>
+    <menuitem label='Gerar QR Code'>
+        <icon>fa:qrcode red fa-fw fa-fw</icon>
+        <action>FormQrcodeView</action>
+    </menuitem>
+    </menu>
+  </menuitem>
+
+<menuitem label="Consulta">
+    <icon>fa:search blue fa-fw fa-fw</icon>
+    <menu>
+    <menuitem label='Consulta Ponto'>
+        <icon>fa:search blue fa-fw fa-fw</icon>
+        <action>ConsultaPontoBolsistaList</action>
+    </menuitem>
+    <menuitem label='Consulta Ponto'>
+        <icon>fa:search blue fa-fw fa-fw</icon>
+        <action>ConsultaPontoAdminList</action>
+    </menuitem>
+    <menuitem label='Consulta Justificativas'>
+        <icon>fa:check-square-o blue fa-fw fa-fw</icon>
+        <action>ConsultaJustificativaBolsistaList</action>
+    </menuitem>
+    <menuitem label='Consulta Justificativas'>
+        <icon>fa:check-square-o blue fa-fw fa-fw</icon>
+        <action>ConsultaJustificativaAdminList</action>
+    </menuitem>
+    <menuitem label='Consulta Presença'>
+        <icon>fa:assistive-listening-systems blue fa-fw fa-fw</icon>
+        <action>ConsultaPresencaEspecialList</action>
+    </menuitem>
+    <menuitem label='Consulta Presença Especial'>
+        <icon>fa:assistive-listening-systems blue fa-fw fa-fw</icon>
+        <action>ConsultaEspecialAdminList</action>
+    </menuitem>
+    <menuitem label="Calendário">
+        <icon>fa:calendar blue fa-fw fa-fw</icon>
+        <action>CalendarDatabaseView</action>
+      </menuitem>
+    </menu>
+  </menuitem>
+    <menuitem label="Cadastro">
+    <icon>fa:bars blue fa-fw fa-fw</icon>
+    <menu>
+    
+    <menuitem label='Usúarios'>
+        <icon>fa:user-circle-o blue fa-fw fa-fw</icon>
+        <action>SystemUserList</action> 
+    </menuitem>
+    <menuitem label='_t{Units}'>
+                  <icon>fa:university blue fa-fw</icon>
+                  <action>SystemUnitList</action>
+              </menuitem>
+    <menuitem label="Tipo Justificativa">
+        <icon>fa:plus-square-o blue fa-fw fa-fw</icon>
+        <action>TipoJustificativaList</action>
+      </menuitem>
+      <menuitem label="Agendar">
+        <icon>fa:calendar blue fa-fw fa-fw</icon>
+        <action>AgendamentoList</action>
+      </menuitem>
+    </menu>
+  </menuitem>
+
+    
+  <menuitem label="Relátorio">
+    <icon>fa:file-pdf-o blue fa-fw fa-fw</icon>
+    <menu>
+    <menuitem label='Relátorio Ponto'>
+        <icon>fa:file-pdf-o red fa-fw fa-fw</icon>
+        <action>GeraPontoIP</action>
+    </menuitem>
+    <menuitem label='Relátorio'>
+        <icon>fa:file-pdf-o blue fa-fw fa-fw</icon>
+        <action>GeraRelatorioBolsista</action>
+    </menuitem>
+    <menuitem label='Relátorio Especial'>
+        <icon>fa:file-pdf-o blue fa-fw fa-fw</icon>
+        <action>GeraRelatorioPresencaEspecial</action>
+    </menuitem>
+    <menuitem label='Relátorio Especial'>
+        <icon>fa:file-pdf-o red fa-fw fa-fw</icon>
+        <action>GeraRelatorioAdminPresencaEspecial</action>
+    </menuitem>
+    </menu>
+  </menuitem>
+  
+  <menuitem label="Gráfico">
+    <icon>fa:line-chart blue fa-fw fa-fw</icon>
+    <menu>
+    <menuitem label='Ponto'>
+        <icon>fa:bar-chart blue fa-fw fa-fw</icon>
+        <action>EstatisticaPonto</action>
+    </menuitem>
+    <menuitem label='Especial'>
+        <icon>fa:bar-chart blue fa-fw fa-fw</icon>
+        <action>EstatisticaEspecial</action>
+    </menuitem>
+    </menu>
+  </menuitem>
+   
+    <menuitem label='_t{Administration}'>
+        <icon>fa:university blue fa-fw</icon>
+        <menu>
+              <menuitem label='_t{Programs}'>
+                  <icon>fa:file-code-o blue fa-fw</icon>
+                  <action>SystemProgramList</action>
+              </menuitem>
+              <menuitem label='_t{Groups}'>
+            <icon>fa:users blue fa-fw</icon>
+            <action>SystemGroupList</action>
+            </menuitem>
+              <menuitem label='_t{Database explorer}'>
+                  <icon>fa:database blue fa-fw</icon>
+                  <action>SystemDatabaseExplorer</action>
+              </menuitem>
+              <menuitem label='_t{SQL Panel}'>
+                  <icon>fa:table blue fa-fw</icon>
+                  <action>SystemSQLPanel</action>
+              </menuitem>
+              <menuitem label='PHP Info'>
+                  <icon>fa:info-circle blue fa-fw</icon>
+                  <action>SystemPHPInfoView</action>
+              </menuitem>
+              <menuitem label='PHP Modules'>
+                  <icon>fa:info-circle blue fa-fw</icon>
+                  <action>SystemModulesCheckView</action>
+              </menuitem>
+        </menu>
+    </menuitem>
+    
+    <menuitem label='_t{Documents}'>
+        <icon>fa:file-text-o blue fa-fw</icon>
+        <menu>
+              <menuitem label='_t{My documents}'>
+                  <icon>fa:archive blue fa-fw</icon>
+                  <action>SystemDocumentList</action>
+              </menuitem>
+              <menuitem label='_t{Categories}'>
+                  <icon>fa:th blue fa-fw</icon>
+                  <action>SystemDocumentCategoryFormList</action>
+              </menuitem>
+        </menu>
+    </menuitem>
+    
+    <menuitem label='Logs'>
+        <icon>fa:desktop blue fa-fw</icon>
+        <menu>
+              <menuitem label='_t{Access Stats}'>
+                  <icon>fa:bar-chart blue fa-fw</icon>
+                  <action>SystemAccessLogStats</action>
+              </menuitem>
+              <menuitem label='_t{Access Log}'>
+                  <icon>fa:key blue fa-fw</icon>
+                  <action>SystemAccessLogList</action>
+              </menuitem>
+        </menu>
+    </menuitem>
+    <menuitem label='Sair'>
+        <icon>fa:sign-out red fa-fw</icon>
+        <action>LoginForm#method=onLogout#static=1</action>
+    </menuitem>
+</menu>

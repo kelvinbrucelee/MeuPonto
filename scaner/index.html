@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/meupontoicon.png" type="image/x-icon">
+
+    <title>Meu Ponto</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
+    <link href="css/new-age.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="scaner/style.css">
+
+</head>
+
+<body id="page-top">
+
+    <header class="masthead">
+        <div class="container h-200">
+            <div class="row h-100">
+                <div class="col-lg-7 my-auto">
+                    <div class="header-content mx-auto">
+                        <span class="d-block p-4 bg-primary text-white">
+              <center>
+                <h2><b>Escanear Código QR Code</b></h2>
+              </center>
+            </span>
+                        <div id="app">
+                            <section class="scans">
+                                <a v-for="scan in scans" :key="scan.date" :title="scan.content" :onchange="window.location.href = scan.content"></a>
+                            </section>
+                            <div class="preview-container">
+                                <video id="preview"></video>
+                            </div>
+                        </div>
+                        <br>
+                        <a href="../index.php?class=LoginForm" class="btn btn-outline btn-xl js-scroll-trigger">Voltar</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 my-auto">
+                    <div class="device-container">
+                        <div class="device-mockup iphone6_plus portrait white">
+                            <div class="device">
+                                <div class="screen">
+                                    <img src="img/demo-screen-1.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="button" href="index.php?class=LoginForm">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <footer>
+        <div class="container">
+            <p>&copy; Kelvin Brucelee</p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webrtc-adapter/3.3.3/adapter.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
+    <script type="text/javascript" src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scaner/app.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+</body>
+
+</html>

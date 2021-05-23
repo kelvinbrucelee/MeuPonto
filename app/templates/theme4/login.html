@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--Kelvin Brucelee-->
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="app/images/meupontoicon.png" type="image/x-icon">
+
+    <title>Meu Ponto</title>
+
+    {LIBRARIES} {HEAD}
+    <!-- Google Fonts -->
+    <link href="app/templates/{template}/plugins/node-waves/waves.css" rel="stylesheet" />
+    <link href="app/templates/{template}/plugins/animate-css/animate.css" rel="stylesheet" />
+    <link href="app/templates/{template}/css/style.css" rel="stylesheet">
+    <link href="app/templates/{template}/css/themes/all-themes.css" rel="stylesheet" />
+
+    <style>
+        .navbar {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body style="background-image: url(app/images/imagemfundo.jpg); background-size: cover; background-repeat: no-repeat;
+    overflow:hidden; background-attachment: fixed;">
+
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="preloader">
+                <div class="spinner-layer pl-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Carregando...</p>
+        </div>
+    </div>
+    <!-- #END# Page Loader -->
+
+    <!-- /.navbar-header -->
+    </nav>
+
+
+    <div id="wrapper" style="width:90%;margin:auto;margin-top:10px">
+        <!-- Navigation -->
+
+        <div id="adianti_div_content"></div>
+        <div id="adianti_online_content"></div>
+        <div id="adianti_online_content2"></div>
+
+
+    </div>
+
+    <a class="little-float-scaner bg-blue" title="Scaner QR Code <p> Aluno Especial</p>" href="scaner/index.html">
+        <i class="fa fa-video-camera internal-float-scaner"></i>
+    </a>
+    <a class="little-float-especial bg-orange" title="Presença Manual <p> Aluno Especial</p>" href="index.php?class=PontoEspecialLogin">
+        <i class="fa fa-500px internal-float-especial"></i>
+    </a>
+    <a class="little-float-button bg-green " title="Manual de Usabilidade" href="lib/ManualUsabilidadeMeuPonto.pdf" target="_blank">
+        <i class="fa fa-newspaper-o internal-float-button"></i>
+    </a>
+    <a class="little-float-voltar bg-orange" title="Voltar" href="index.php?class=LoginForm" style="pointer-events: auto;">
+        <i class="fa fa-reply-all internal-float-voltar"></i>
+    </a>
+
+    <!-- /#wrapper -->
+
+    <script src="app/templates/{template}/js/admin-login.js"></script>
+</body>
+
+</html>
